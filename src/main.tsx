@@ -1,10 +1,17 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
+
+import './assets/fonts/font-face.css'
 import './index.css'
 
+import Wrapper from './Wrapper.tsx'
+
+
 ReactDOM.createRoot(document.getElementById('root')!).render(
+
   <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+    <Wrapper></Wrapper>
+  </React.StrictMode>
+
+
 )

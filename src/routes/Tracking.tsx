@@ -3,14 +3,14 @@ import { ModeToggle } from '@/components/mode-toggle'
 import { Link } from 'react-router-dom';
 import AppNav from '@/components/app/app-sidebar';
 
-const Settings = () => {
+const Tacking = () => {
     return (<>
         <div className='w-full h-full flex flex-col'>
             <AppNav></AppNav>
 
             <div className='h-full w-full'>
                 <Button>Hello</Button> <ModeToggle></ModeToggle>
-                <h2>Settings</h2>
+                <h2>Tracking</h2>
                 <div className='flex items-center gap-x-5 w-full'>
                     <Link to='/'>Home</Link>
                     <Link to='/settings'>Settings</Link>
@@ -21,4 +21,4 @@ const Settings = () => {
     </>);
 }
 
-export default Settings;
+export default Tacking;

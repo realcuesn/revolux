@@ -1,7 +1,6 @@
 const { contextBridge, ipcRenderer } = require("electron");
 
-contextBridge.exposeInMainWorld("electronNavigation", {
-  minimize: () => ipcRenderer.invoke("minimize"),
-  maximize: () => ipcRenderer.invoke("maximize"),
-  close: () => ipcRenderer.invoke("close"),
+// Expose the getTrackingData method
+contextBridge.exposeInMainWorld("getTrackingData", {
+  getTrackingData: () => ipcRenderer.invoke("getTrackingData"),
 });
